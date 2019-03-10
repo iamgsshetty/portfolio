@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    </title>
+    <link rel="stylesheet" href="ec.css">
+    
+  </head>
+  <body class="back">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="profile.html">PROFILE</a>
+        <a href="contact.html">CONTACT ME</a>
+
+      </div>
+    </div>
+
+<div class="bg-img">
+    <span style="font-size:45px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+  </div>
+   <div class="text1">Extra Cirricular</div>
+  </div>
+</div>
+<h1>I do a lots of extra cirricular activities as it is important for every one to <br>
+    not just keep studing all the time. This will make any one stay dipressed and<br>
+    ultimately may cause damage to that person himself. There are lots of cirricular<br>
+    activities to do. Activities which i do are like ....<br></h1>
+
+
+  <div class="container1">
+  <img src="material/ronaldo.jpg" alt="Notebook" style="width:114%;">
+  <div class="content1">
+    <h3>FOOTBALL</h3>
+    <p>This is my favorite sport and i will keep playing this forever. I really enjoy playing this sport. no wonder this is the most played sport in the world</p>
+  </div>
+  <div class="container2">
+  <img src="material/virat-kohli-m2.jpg" alt="Notebook" style="width:150%;" style="padding:10px">
+  <div class="content2">
+    <h3>CRICKET</h3>
+    <p>This is also my favorite sport and i will keep playing this forever. I really enjoy playing this sport. no wonder this is the 2nd most played sport in the world</p>
+  </div>
+  <div class="container3">
+  <img src="material/music.jpg" alt="Notebook" style="width:150%;">
+  <div class="content3">
+    <h3>MUSIC PRODUCER</h3>
+    <p>This is also my favorite thing. i really enjoy producing music .i wish i could be some one like martin garrix and calvin harris.even though i cant be like them i will try my best to become a really good music producer</p>
+  </div>
+  <div class="container4">
+  <img src="material/program.jpg" alt="Notebook" style="width:185%;">
+  <div class="content4">
+    <h3>PROGRAMMER</h3>
+    <p>This is my favorite thing . i am a all tie programer and ill even make this passion of mine as proffession</p>
+  </div>
+</div>
+
+    <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+    <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  </body>
+</html>

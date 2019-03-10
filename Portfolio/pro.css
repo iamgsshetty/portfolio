@@ -1,0 +1,355 @@
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("material/profile back2.jpg");
+
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: sticky;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: ;
+
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+  border-color: #FFDAB9;
+  border-radius: 12px;
+
+}
+.profile {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+  border-color: #FFDAB9;
+  border-radius: 12px;
+}
+
+.profile .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+
+
+  left: 0%;
+  margin-left: 60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.profile .tooltiptext::after {
+  content: ;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: 5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.profile:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.topnav a:hover {
+  border-radius: 12px;
+  background-color: orange;
+  color: white;
+
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float:left;;
+}
+
+
+
+.image {
+  display: block;
+  width: 20%;
+  margin-top:5%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 30;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  width: 20%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text1 {
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 7vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 55%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 25px;
+    border-radius: 10px;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+    border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  color: #404040;
+  font-size: 45px;
+
+}
+h2 {
+  font-size: 35px;
+}
+.backgroundcolour{
+  background-color: #f2f2f2;
+}
+.accordion {
+  background-color: #white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+  border-radius: 30px;
+  border-color: #595959;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 25px;
+}
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.subcontainer {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+}
+
+.math {width: 94%; background-color: #f44336;border-radius: 10px;} /* red */
+.science {width: 95%; background-color: #2196F3;border-radius: 10px;} /* Blue */
+.ss {width: 95%; background-color: #4CAF50;border-radius: 10px;} /* green */
+.hindi {width: 92%; background-color: #808080;border-radius: 10px;} /* Dark Grey */
+.cs {width: 95%; background-color: #ff66ff;border-radius: 10px;} /* pink */
+.english {width: 86%; background-color: yellow;border-radius: 10px;} /* yellow */
+.math1 {width: 96%; background-color: #f44336;border-radius: 10px;} /* red */
+.phy {width: 92%; background-color: #2196F3;border-radius: 10px;} /* Blue */
+.chem {width: 86%; background-color: #4CAF50;border-radius: 10px;} /* green */
+.ev {width: 100%; background-color: #808080;border-radius: 10px;} /* Dark Grey */
+.cs1 {width: 93.5%; background-color: #ff66ff;border-radius: 10px;} /* pink */
+.english1 {width: 80%; background-color: yellow;border-radius: 10px;} /* yellow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  border-radius: 20px;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #595959;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: orange;
+}
+
+/* Caption text */
+.text2 {
+  color: #595959;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/2etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

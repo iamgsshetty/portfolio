@@ -1,0 +1,213 @@
+.back{
+  background-color: #f2f2f2;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("material/tex.jpg");
+
+  min-height: 500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+  border-radius: 20px;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #00cccc;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: black;
+}
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+
+  }
+}
+.text1 {
+  border-radius: 50px;
+  background-color: White;
+  color: black;
+  font-size: 6vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 50px;
+  width: 50%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 40%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+  margin-top: 0px;
+}
+h1{
+  margin-top: 80px;
+  font-size: 35px;
+  text-align: center;
+color:#4d4d4d;
+}
+h2{
+
+  font-size: 50px;
+
+  border-radius: 2px;
+  border-color: ;
+  border-left: solid 5px;
+  border-right:  solid 5px;
+  background-color: white;
+  margin-right: 10px;
+color:#4d4d4d;
+padding-left:  30px;
+text-align: center;
+}
+.container1 {
+  position: absolute;
+  max-width: 1000px;
+  margin-left: 50px;
+  margin: 0 auto;
+  left: 17%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.container1 img {vertical-align: middle;}
+
+.container1 .content1 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 90%;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.container2 {
+  position: absolute;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container2 img {vertical-align: middle;}
+
+.container2 .content2 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 90%;
+  padding: 20px;
+  font-size: 25px;
+}
+.container3 {
+  position: absolute;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container3 img {vertical-align: middle;}
+
+.container3 .content3 {
+  position: absolute;
+  bottom: 100px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 90%;
+  padding: 20px;
+  font-size: 25px;
+}
+.container4 {
+
+  position: absolute;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container4 img {vertical-align: middle;}
+
+.container4 .content4 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  font-size: 25px;
+}
+h3{
+  font-size: 45px;
+
+}

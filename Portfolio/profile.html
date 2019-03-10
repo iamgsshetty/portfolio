@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="pro.css">
+<script src="pro.js"></script>
+</head>
+<body class="backgroundcolour">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="bg-img">
+    <div class="container">
+
+      <div class="topnav">
+      
+        <img src="material/avatar.jpg" alt="Avatar" class="avatar">
+        <div class="profile">Profile
+         <span class="tooltiptext">Your In Profile</span></div>
+        <a href="ec.html">Extra-Cirricular</a>
+        <a href="contact.html">Contact</a>
+
+      </div>
+      <img src="material/myself.jpg" alt="Avatar" class="image">
+   <div class="overlay">
+     <div class="text">It's Me</div>
+   </div>
+
+    </div>
+     <div class="text1">Gaurav Shetty</div>
+  </div>
+  <h1>Education Details</h1>
+  <h2>X Standard</h2>
+  <table>
+  <tr>
+    <th>School</th>
+    <th>Thakur Public School</th>
+  </tr>
+  <tr>
+    <td>Year</td>
+    <td>2015-2016</td>
+  </tr>
+  <tr>
+    <td>Board</td>
+    <td>ICSE</td>
+  </tr>
+</table>
+<button class="accordion">Click Here For Marks In Each Subject ...</button>
+<div class="panel">
+  <p>Mathematics</p>
+  <div class="subcontainer">
+    <div class="skills math">94%</div>
+</div>
+
+<p>Social Studies</p>
+<div class="subcontainer">
+  <div class="skills ss">95%</div>
+</div>
+
+<p>Hindi</p>
+<div class="subcontainer">
+  <div class="skills hindi">92%</div>
+</div>
+
+<p>Science</p>
+<div class="subcontainer">
+  <div class="skills science">95%</div>
+</div>
+<p>Computer Science</p>
+<div class="subcontainer">
+  <div class="skills cs">95%</div>
+</div>
+<p>English</p>
+<div class="subcontainer">
+  <div class="skills english">86%</div>
+</div>
+</div>
+<h2>XII Standard</h2>
+<table>
+<tr>
+  <th>School</th>
+  <th>Pace Junior Science College</th>
+</tr>
+<tr>
+  <td>Year</td>
+  <td>2017-2018</td>
+</tr>
+<tr>
+  <td>Board</td>
+  <td>HSC</td>
+</tr>
+</table>
+<button class="accordion">Click Here For Marks In Each Subject ...</button>
+<div class="panel">
+  <p>Mathematics</p>
+  <div class="subcontainer">
+    <div class="skills math1">96%</div>
+</div>
+<p>Physics</p>
+<div class="subcontainer">
+  <div class="skills phy">92%</div>
+</div>
+
+<p>Chemistry</p>
+<div class="subcontainer">
+  <div class="skills chem">86%</div>
+</div>
+<p>Computer Science</p>
+<div class="subcontainer">
+  <div class="skills cs1">93.5%</div>
+</div>
+<p>English</p>
+<div class="subcontainer">
+  <div class="skills english1">80%</div>
+</div>
+<p>Envoirenmental Studies</p>
+<div class="subcontainer">
+  <div class="skills ev">100%</div>
+</div>
+</div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="material/ssc.jpg" style="width:100%">
+    <div class="text2">SSC MARKSHEET</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="material/hsc.jpg" style="width:100%" >
+    <div class="text2">HSC MARKSHEET</div>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
